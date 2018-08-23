@@ -1,0 +1,135 @@
+.sidebar {
+  position: fixed;
+  z-index: 1019;
+  width: 200px;
+  height: 100vh;
+}
+
+.sidebar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  color: #fff;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#777777+0,000000+100&0.65+0,0+100 */
+background: -moz-linear-gradient(left, rgba(119,119,119,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(119,119,119,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(119,119,119,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6777777', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+.sidebar .sidebar-nav {
+    position: relative;
+    width: 200px;
+}
+
+.sidebar-nav {
+  transition: width .25s;
+}
+
+.ps {
+  overflow: hidden!important;
+  -ms-touch-action: auto;
+  touch-action: auto;
+  -ms-overflow-style: none;
+  overflow-anchor: none;
+}
+
+.sidebar .nav {
+  width: 200px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0;
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.sidebar .nav-item {
+  position: relative;
+  margin: 0;
+  transition: background .3s ease-in-out;
+}
+
+.sidebar .nav-dropdown.open {
+  background: rgba(0,0,0,.2);
+}
+
+.sidebar .nav-dropdown.open>.nav-dropdown-toggle::before {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.sidebar .nav-dropdown-toggle::before {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin-top: -4px;
+  content: "";
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%2373818f' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s;
+}
+
+.sidebar .nav-dropdown-toggle {
+  position: relative;
+}
+
+.sidebar .nav-dropdown-toggle:hover::before {
+
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+}
+
+.sidebar .nav-link {
+  display: block;
+  padding: .75rem 1rem;
+  color: #000;
+  text-decoration: none;
+  background: 0 0;
+}
+
+.sidebar .nav-link {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: background .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a8d8+0,000000+100&0.65+0,0+100 */
+background: -moz-linear-gradient(left, rgba(32,168,216,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(32,168,216,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(32,168,216,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a620a8d8', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}

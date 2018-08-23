@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "styleext": "css"
         }
       },
       "architect": {
@@ -27,10 +27,15 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/styles.scss"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",                            
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/js/navRight.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -128,5 +133,10 @@
       }
     }
   },
-  "defaultProject": "DataIntegration-SPA"
+  "defaultProject": "DataIntegration-SPA",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
